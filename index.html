@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter location name" spellcheck="false">
+            <button><box-icon name='search' border='none' size='md' color='#555'></box-icon></button>
+        </div>
+
+        <div class="error">Invalid location name.<br>Please make sure the spelling is correct.</div>
+
+        <div class="weather">
+            <img src="./images/rain.png" class="weather-icon" alt="It's rainy">
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="./images/humidity.png" alt="Humidity">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/wind.png" alt="Wind">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********** BoxIcons Import ********** -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- ********** JavaScript File ********** -->
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
